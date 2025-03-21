@@ -20,7 +20,7 @@ while True:
 
     # Get user query
     query = input("User: ")
-    
+
     # Check if user query is quit, if so break out of the chat loop
     if query.lower() == "quit":
         print(f"AI: Goodbye")
@@ -36,4 +36,3 @@ while True:
 
 print("----- Message History -----")
 print(chat_history)
-    
