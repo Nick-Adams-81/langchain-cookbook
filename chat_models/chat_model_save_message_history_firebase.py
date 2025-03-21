@@ -49,6 +49,5 @@ while True:
     chat_history.add_ai_message(response.content)
 
     print(f"AI: {response.content}")
-    
 
 
