@@ -58,7 +58,7 @@ chain = (
     model | 
     StrOutputParser() | 
     RunnableParallel(branches={"pros": pros_branch, "cons": cons_branch}) |
-    RunnableLambda(lambda x : print("Final output", x) or combine_pros_cons(x["branches"]["pros"], x["branches"]["cons"]))
+    RunnableLambda(lambda x : combine_pros_cons(x["branches"]["pros"], x["branches"]["cons"]))
 )
 
 # Run the chain
