@@ -20,7 +20,7 @@ db = Chroma(
 )
 
 # Define user's query
-query = "How did Juliet die?"
+query = "What is the main characters name in the odyssey?"
 
 # Retrieve relevant docs based on the query
 retriever = db.as_retriever(
