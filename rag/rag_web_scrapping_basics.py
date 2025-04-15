@@ -56,7 +56,7 @@ retriever = db.as_retriever(
 query = "What new products are announced on Apple.com?"
 
 # Retrieve relevant docs based on the query
-relevant_docs= retriever.invoke(query)
+relevant_docs = retriever.invoke(query)
 
 # Display the relevant results with metadata
 print("\n--- Relevant Documents ---")
