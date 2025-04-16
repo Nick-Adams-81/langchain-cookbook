@@ -16,7 +16,7 @@ def get_current_time(*args, **kwargs):
     now = datetime.datetime.now()
     return now.strftime("%I:%M %p")
 
-def ssearch_wikipedia(query):
+def search_wikipedia(query):
     """Searches wikipedia and returns the summary of the first result"""
     from wikipedia import summary
     try:
@@ -33,7 +33,7 @@ tools = [
     ),
     Tool(
         name="Wikipedia",
-        func=ssearch_wikipedia,
+        func=search_wikipedia,
         description="Useful for when you need to know information about a topic"
     )
 ]
